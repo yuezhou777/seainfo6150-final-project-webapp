@@ -1,0 +1,38 @@
+.navContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 40px 20px 20px;
+}
+
+.navIcon {
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: orange;
+}
+
+.navList {
+    display: flex;
+    text-align: justify;
+}
+
+.navItem {
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 1.5rem;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+}
+
+.link {
+    color: olive;
+    font-weight: bold;
+}
+
+.navItem:hover {
+    background-color:greenyellow;
+}
+

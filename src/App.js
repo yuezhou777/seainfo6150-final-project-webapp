@@ -1,12 +1,19 @@
-import React from "react";
-import { Switch, Route, Link } from "react-router-dom";
+import React, { useEffect, useState }  from "react";
+import { Switch, Route } from "react-router-dom";
+import { isEmpty } from "lodash";
 
-import Home from "./Home/Home.jsx";
-import Foo from "./Foo/Foo.jsx";
-import Bar from "./Bar/Bar.jsx";
 import Baz from "./Baz/Baz.jsx";
 import Error from "./Error/Error.jsx";
+import HomePage from "./Home/HomePage.jsx";
+import AboutUs from "./AboutUs/AboutUs.jsx";
+import PostArticle from "./PostArticle/PostArticle.jsx";
+import CategoryPage from "./Category/CategoryPage.jsx";
+import IndividualCategoryPage from "./Category/IndividualCategoryPage.jsx";
+import AllPets from './AllPets/AllPets.jsx';
+import Contact from './Contact/Contact.jsx';
+import ThankYou from './ThankYou/ThankYou.jsx';
 
+// https://run.mocky.io/v3/00f9b6a5-c68a-48ad-a74e-f3c46051d7ae
 // here is some external content. look at the /baz route below
 // to see how this content is passed down to the components via props
 const externalContent = {
@@ -17,53 +24,78 @@ const externalContent = {
 };
 
 function App() {
-  return (
-    <>
-      <header>
-        <nav>
-          <ul>
-            {/* these links should show you how to connect up a link to a specific route */}
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/foo">Foo</Link>
-            </li>
-            <li>
-              <Link to="/bar/hats/sombrero">Bar</Link>
-            </li>
-            <li>
-              <Link to="/baz">Baz</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/foo" exact component={Foo} />
-        {/* passing parameters via a route path */}
-        <Route
-          path="/bar/:categoryId/:productId"
-          exact
-          render={({ match }) => (
-            // getting the parameters from the url and passing
-            // down to the component as props
-            <Bar
-              categoryId={match.params.categoryId}
-              productId={match.params.productId}
-            />
-          )}
-        />
-        <Route
-          path="/baz"
-          exact
-          render={() => <Baz content={externalContent} />}
-        />
-        <Route component={Error} />
-      </Switch>
-    </>
+  const [fetchedData, setFetchedData] = useState();
+
+  useEffect(() => {
+      const fetchData = async () => {
+          const response = await fetch("https://run.mocky.io/v3/2a290061-05b3-4ae4-8b1b-1de1a2259ea7");
+          const responseJson = await response.json();
+
+          setFetchedData(Object.values(responseJson));
+      };
+
+      if (isEmpty(fetchedData)) {
+          fetchData();
+      }
+  }, [fetchedData]);
+
+  return isEmpty(fetchedData) ? null : (
+    <div className="App">
+        <>
+            <Switch>
+                <Route path="/" exact>
+                    <HomePage posts={fetchedData} />
+                </Route>
+
+                <Route path="/aboutus" exact component={AboutUs} />
+
+                <Route path="/allpets" exact>
+                    <AllPets posts={fetchedData} />
+                </Route>
+
+                {/* contact us page */}
+                <Route path="/contactus" exact component={Contact} />
+
+                {/* thankyou page */}
+                <Route path="/thankyou" exact component={ThankYou} />
+
+                <Route
+                    path="/posts/:id"
+                    exact
+                    render={({ match }) => (
+                        <PostArticle
+                            postId={match.params.id}
+                            posts={fetchedData}
+                        />
+                    )}
+                />
+
+                <Route
+                    path="/category/:breed"
+                    exact
+                    render={({ match }) => (
+                        <IndividualCategoryPage
+                            category={match.params.breed}
+                            posts={fetchedData}
+                        />
+                    )}
+                />
+
+                <Route
+                    path="/category"
+                    exact>
+                    <CategoryPage posts={fetchedData} />
+                </Route>
+
+                <Route
+                    path="/baz"
+                    exact
+                    render={() => <Baz content={externalContent} />}
+                />
+                <Route component={Error} />
+            </Switch>
+        </>
+    </div>
   );
 }
 

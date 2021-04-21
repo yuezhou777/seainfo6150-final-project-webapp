@@ -1,0 +1,9 @@
+.container {
+    margin: 4em 20em 0px 20em;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.postContainer {
+    margin: auto;
+    padding: 0.5em 0em 3em 0em;
+}

@@ -1,37 +1,53 @@
-import React, { useState } from "react";
+import React from "react";
+import { useHistory } from "react-router-dom";
+import styles from "../Form/Form.module.css";
 
 const Form = () => {
-  const [submittedForm, setSubmittedForm] = useState();
-  function onSubmit(e) {
+
+  const history = useHistory();
+
+  const submitHandler = (e) => {
     e.preventDefault();
-    const data = new FormData(e.target);
-    console.log("DATA", data.get("foo"));
-    setSubmittedForm(data);
+    history.push("/thankyou");
   };
 
   return (
-    <div>
-      {
-        submittedForm ? (
-          <div>Your form entry was {submittedForm.get("myText")} and {submittedForm.get("myDropdown")}</div>
-        ) : (
-          <form onSubmit={onSubmit}>
-            <label htmlFor="myTextId">Input</label>
-            <input type="text" name="myText" id="myTextId"/>
-
-            <label htmlFor="myDropdownId">Input</label>
-            <select name="myDropdown" id="myDropdownId">
-              <option value="foo">Foo</option>
-              <option value="bar">Bar</option>
-              <option value="baz">Baz</option>
-            </select>
-            <label htmlFor="foo-yes">yes</label><input type="radio" name="foo" id="foo-yes" value="yes" />
-            <label htmlFor="foo-no">no</label><input type="radio" name="foo" id="foo-no" value="no" />
-            <label htmlFor="foo-maybe">maybe</label><input type="radio" name="foo" id="foo-maybe" value="maybe" />
-            <input type="submit" value="Send it" />
-          </form>
-        )
-      }
+    <div className={styles.container}>
+      <form onSubmit={submitHandler}>
+        <fieldset className={styles.formContent}>
+          <h2>Adoption Form</h2>
+          <div>
+            <label htmlFor="firstName">First Name : </label>
+            <input type="text" name="firstName" id="firstName"
+                  required
+            />
+          </div>
+          <div>
+            <label htmlFor="lastName">Last Name : </label>
+            <input type="text" name="lastName" id="lastName"
+                  required
+            />
+          </div>
+          <div>
+            <label htmlFor="email">Email : </label>
+            <input type="text" name="email" id="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  placeholder="abc@gmail.com"
+                  required
+            />
+          </div>
+          <div>
+            <label htmlFor="phoneNumber">Phone Number : </label>
+            <input type="text" name="phoneNumber" id="phonephoneNumberNum"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  placeholder="xxx-xxx-xxxx"
+            />
+          </div>
+          <div>
+            <input className={styles.button} type="submit" value="Register"></input>
+          </div>
+        </fieldset>
+      </form>
     </div>
   )
 }

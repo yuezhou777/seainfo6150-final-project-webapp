@@ -1,0 +1,37 @@
+.container {
+    width: 50%;
+    margin: auto;
+    align-self: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comic Sans MS', sans-serif;
+
+    background: #fff;
+    border: 2px #4CAF50;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px #4CAF50;
+    padding: 15px;
+}
+
+.contactTitle {
+    font-size: 2em;
+}
+
+.contactContent {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.link:hover {
+    background-color: greenyellow;
+}
+
+.link {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: saddlebrown;
+}

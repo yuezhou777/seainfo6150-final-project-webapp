@@ -1,0 +1,25 @@
+.board {
+    font-family: 'Verdana', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+.title {
+    display: flex;
+    flex-flow: row;
+    height: 300px;
+    margin: 50px 60px 0px 60px;
+}
+
+.postImg {
+    max-width: 400px;
+    align-items: center;
+
+}
+
+.content {
+    text-align: left;
+    line-height: 40px;
+}

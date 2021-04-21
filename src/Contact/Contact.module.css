@@ -1,0 +1,30 @@
+.container {
+    width: 50%;
+    margin: auto;
+    align-self: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comic Sans MS', sans-serif;
+
+    background: #fff;
+    border: 2px orange;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px orange;
+    padding: 15px;
+}
+
+.contactTitle {
+    font-size: 2em;
+}
+
+.contactContent {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.link:hover {
+    background-color: greenyellow;
+}

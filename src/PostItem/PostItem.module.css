@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+}
+
+.postText {
+    color: sienna;
+    float: left;
+    text-align: left;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1.2em;
+}
+
+.postImg {
+    height: 250px;
+    width: 400px;
+    float: left;
+}
+
+.link {
+    color: saddlebrown;
+}
+
+.link:hover {
+    color: orange;
+}

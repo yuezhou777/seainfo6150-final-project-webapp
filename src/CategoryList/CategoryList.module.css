@@ -1,0 +1,43 @@
+.container {
+    margin: 50px 20px 0px 20px;
+    font-family: 'Century Gothic', sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+.categoryTitle {
+    margin: 40px;
+    font-size: 1.6em;
+    color: saddlebrown;
+}
+
+.listContainer {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-flow: row wrap;
+    font-size: 1.2em;
+}
+
+.category {
+    color: olive;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .listContainer {
+        display: flex;
+        flex-flow: row wrap;
+        padding-right: 40px;
+    }
+
+}
+
+.category {
+    text-align: center;
+    justify-content: center;
+}
+
+.category:hover {
+    color: greenyellow;
+}

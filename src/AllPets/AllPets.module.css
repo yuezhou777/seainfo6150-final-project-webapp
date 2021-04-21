@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-flow: column;
+}
+
+.board {
+    display: flex;
+    flex-flow: column;
+}
+
+.postBoard {
+    display: flex;
+    flex-direction: column;
+}
+
+.postList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
