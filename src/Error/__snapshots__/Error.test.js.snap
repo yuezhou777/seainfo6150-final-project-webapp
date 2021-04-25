@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Error Correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div>
+      <div
+        class="navContainer"
+      >
+        <header
+          class="navContainer"
+        >
+          <nav>
+            <a
+              class="navIcon"
+              href="/"
+            >
+              PurrPet
+            </a>
+          </nav>
+          <nav>
+            <ul
+              class="navList"
+            >
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/aboutus"
+                >
+                  About Us
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/allpets"
+                >
+                  All Pets
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/category"
+                >
+                  Categories
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/contactus"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <div>
+      <img
+        alt="404 Not Found"
+        class="errorImg"
+        src="error.jpg"
+      />
+    </div>
+    <div>
+      <a
+        class="link"
+        href="/"
+      >
+        Back To Main
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders the Error Component Correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div>
+      <div
+        class="navContainer"
+      >
+        <header
+          class="navContainer"
+        >
+          <nav>
+            <a
+              class="navIcon"
+              href="/"
+            >
+              PurrPet
+            </a>
+          </nav>
+          <nav>
+            <ul
+              class="navList"
+            >
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/aboutus"
+                >
+                  About Us
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/allpets"
+                >
+                  All Pets
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/category"
+                >
+                  Categories
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/contactus"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <div>
+      <img
+        alt="404 Not Found"
+        class="errorImg"
+        src="error.jpg"
+      />
+    </div>
+    <div>
+      <a
+        class="link"
+        href="/"
+      >
+        Back To Main
+      </a>
+    </div>
+  </div>
+</div>
+`;

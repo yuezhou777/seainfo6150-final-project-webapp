@@ -44,7 +44,7 @@ const Form = () => {
             />
           </div>
           <div>
-            <input className={styles.button} type="submit" value="Register"></input>
+            <input className={styles.button} type="submit" value="Submit"></input>
           </div>
         </fieldset>
       </form>

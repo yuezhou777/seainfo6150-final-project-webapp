@@ -17,3 +17,22 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+/* resposive */
+@media (min-width: 400px) {
+    .postList {
+        grid-template-columns: 1fr
+    }
+}
+
+@media (min-width: 600px) {
+    .postList {
+        grid-template-columns: 1fr 1fr
+    }
+}
+
+@media (min-width: 800px) {
+    .postList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`form test render Form successfully  1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <form>
+      <fieldset
+        class="formContent"
+      >
+        <h2>
+          Adoption Form
+        </h2>
+        <div>
+          <label
+            for="firstName"
+          >
+            First Name : 
+          </label>
+          <input
+            id="firstName"
+            name="firstName"
+            required=""
+            type="text"
+          />
+        </div>
+        <div>
+          <label
+            for="lastName"
+          >
+            Last Name : 
+          </label>
+          <input
+            id="lastName"
+            name="lastName"
+            required=""
+            type="text"
+          />
+        </div>
+        <div>
+          <label
+            for="email"
+          >
+            Email : 
+          </label>
+          <input
+            id="email"
+            name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\\\.[a-z]{2,}$"
+            placeholder="abc@gmail.com"
+            required=""
+            type="text"
+          />
+        </div>
+        <div>
+          <label
+            for="phoneNumber"
+          >
+            Phone Number : 
+          </label>
+          <input
+            id="phonephoneNumberNum"
+            name="phoneNumber"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            placeholder="xxx-xxx-xxxx"
+            type="text"
+          />
+        </div>
+        <div>
+          <input
+            class="button"
+            type="submit"
+            value="Submit"
+          />
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
+`;

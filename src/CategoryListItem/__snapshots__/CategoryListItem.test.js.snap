@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryListItem test render CategoryListItem successfully  1`] = `
+<div>
+  <div>
+    <div
+      class="listContainer"
+    >
+      <h1 />
+      <ul />
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HTMLText test render successfully  1`] = `
+<div>
+  <div>
+    <p>
+      hello
+    </p>
+    <p>
+      world
+    </p>
+  </div>
+</div>
+`;
+
+exports[`html text test render successfully  1`] = `
+<div>
+  <div>
+    <p>
+      hello
+    </p>
+    <p>
+      world
+    </p>
+  </div>
+</div>
+`;

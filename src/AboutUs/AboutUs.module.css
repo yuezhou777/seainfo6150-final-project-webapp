@@ -28,3 +28,25 @@
 .aboutUsContent {
     text-align:justify;
 }
+
+/* resposive */
+@media (min-width: 400px) {
+    .board {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+@media (min-width: 700px) {
+    .board {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+@media (min-width: 800px) {
+    .board {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+}

@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IndividualCategoryPage test render IndividualCategoryPage successfully  1`] = `
+<div>
+  <div>
+    <div>
+      <div
+        class="navContainer"
+      >
+        <header
+          class="navContainer"
+        >
+          <nav>
+            <a
+              class="navIcon"
+              href="/"
+            >
+              PurrPet
+            </a>
+          </nav>
+          <nav>
+            <ul
+              class="navList"
+            >
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/aboutus"
+                >
+                  About Us
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/allpets"
+                >
+                  All Pets
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/category"
+                >
+                  Categories
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/contactus"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <div
+      class="container"
+    >
+      <h1>
+        Husky
+      </h1>
+      <ul>
+        <div
+          class="postContainer"
+        >
+          <h2
+            class="postTitle"
+          >
+            <a
+              href="/posts/1"
+            >
+              Mel
+            </a>
+          </h2>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1605559141066-1549783d18e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=250"
+            />
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

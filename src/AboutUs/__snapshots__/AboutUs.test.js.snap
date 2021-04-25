@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders AboutUs Correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div>
+      <div
+        class="navContainer"
+      >
+        <header
+          class="navContainer"
+        >
+          <nav>
+            <a
+              class="navIcon"
+              href="/"
+            >
+              PurrPet
+            </a>
+          </nav>
+          <nav>
+            <ul
+              class="navList"
+            >
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/aboutus"
+                >
+                  About Us
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/allpets"
+                >
+                  All Pets
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/category"
+                >
+                  Categories
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/contactus"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <div
+      class="board"
+    >
+      <div
+        class="aboutUsText"
+      >
+        <h2
+          class="aboutUsTitle"
+        >
+          About Us
+        </h2>
+        <div
+          class="aboutUsContent"
+        >
+          <p>
+            We are people helping cats, dogs and wild animals go home and thrive. We do this by sheltering and adopting homeless cats and dogs, and educating the community to inspire compassionate action for animals.
+          </p>
+        </div>
+      </div>
+      <div>
+        <img
+          alt="About us image: a person hugs a dog"
+          class="aboutUsImg"
+          src="aboutus.jpeg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

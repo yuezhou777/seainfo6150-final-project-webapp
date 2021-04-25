@@ -17,7 +17,6 @@ const IndividualCategoryPage = (props) => {
                 <NavBar />
             </div>
 
-
             <div className={styles.container}>
                 <h1>{category}</h1>
 
@@ -36,7 +35,6 @@ const IndividualCategoryPage = (props) => {
                                 </div>
                             </div>
                         ))
-
                     }
                 </ul>
             </div>

@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryListItem test render CategoryListItem successfully  1`] = `
+<div>
+  <div>
+    <div>
+      <div
+        class="navContainer"
+      >
+        <header
+          class="navContainer"
+        >
+          <nav>
+            <a
+              class="navIcon"
+              href="/"
+            >
+              PurrPet
+            </a>
+          </nav>
+          <nav>
+            <ul
+              class="navList"
+            >
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/aboutus"
+                >
+                  About Us
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/allpets"
+                >
+                  All Pets
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/category"
+                >
+                  Categories
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/contactus"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <div
+      class="board"
+    >
+      <div
+        class="title"
+      >
+        <div
+          class="postImg"
+        >
+          <img
+            alt="Mel"
+            src="https://images.unsplash.com/photo-1605559141066-1549783d18e9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=250"
+          />
+        </div>
+      </div>
+      <div
+        class="content"
+      >
+        <h2>
+          Mel
+        </h2>
+        <h3>
+          1 year
+           - 
+          Female
+        </h3>
+        <div>
+          Mel is a gentle and sweet dog. She takes food out of your hand gently and likes to give little kisses, she still likes to run and play as if she was a puppy. Once she gets to know someone, she becomes less shy and more affectionate. She enjoys staying by a person's side.
+        </div>
+      </div>
+      <button
+        class="button"
+      >
+        Adopt Now
+      </button>
+    </div>
+  </div>
+</div>
+`;

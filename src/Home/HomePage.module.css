@@ -75,3 +75,25 @@
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+
+/* resposive */
+@media (min-width: 400px) {
+    .board {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+@media (min-width: 700px) {
+    .board {
+        display: flex;
+        flex-flow: row wrap;
+    }
+}
+
+@media (min-width: 800px) {
+    .board {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

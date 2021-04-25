@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Contact Correctly 1`] = `
+<div>
+  <div>
+    <div>
+      <div
+        class="navContainer"
+      >
+        <header
+          class="navContainer"
+        >
+          <nav>
+            <a
+              class="navIcon"
+              href="/"
+            >
+              PurrPet
+            </a>
+          </nav>
+          <nav>
+            <ul
+              class="navList"
+            >
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/aboutus"
+                >
+                  About Us
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/allpets"
+                >
+                  All Pets
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/category"
+                >
+                  Categories
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/contactus"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <div
+      class="container"
+    >
+      <h2
+        class="contactTitle"
+      >
+        Contact now to get more info:
+      </h2>
+      <div
+        class="contactContent"
+      >
+        <address>
+          <a
+            class="link"
+            href="mailto:zhou.yue2@northeastern.com"
+          >
+            PURR PET
+          </a>
+          <br />
+          Written by Yue Zhou
+          <br />
+          Call us: +1-(206)-636-9951
+          <br />
+          Visit us at:
+          <br />
+          2442 8th Ave N
+          <br />
+          Washingtong
+          <br />
+          USA
+        </address>
+      </div>
+    </div>
+  </div>
+</div>
+`;

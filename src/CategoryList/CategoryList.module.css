@@ -15,7 +15,6 @@
     margin: 40px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    flex-flow: row wrap;
     font-size: 1.2em;
 }
 
@@ -40,4 +39,25 @@
 
 .category:hover {
     color: greenyellow;
+}
+
+/* resposive */
+@media (min-width: 400px) {
+    .listContainer {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+}
+
+@media (min-width: 600px) {
+    .listContainer {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+    }
+}
+
+@media (min-width: 800px) {
+    .listContaine {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

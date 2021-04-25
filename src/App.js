@@ -2,7 +2,6 @@ import React, { useEffect, useState }  from "react";
 import { Switch, Route } from "react-router-dom";
 import { isEmpty } from "lodash";
 
-import Baz from "./Baz/Baz.jsx";
 import Error from "./Error/Error.jsx";
 import HomePage from "./Home/HomePage.jsx";
 import AboutUs from "./AboutUs/AboutUs.jsx";
@@ -12,16 +11,6 @@ import IndividualCategoryPage from "./Category/IndividualCategoryPage.jsx";
 import AllPets from './AllPets/AllPets.jsx';
 import Contact from './Contact/Contact.jsx';
 import ThankYou from './ThankYou/ThankYou.jsx';
-
-// https://run.mocky.io/v3/00f9b6a5-c68a-48ad-a74e-f3c46051d7ae
-// here is some external content. look at the /baz route below
-// to see how this content is passed down to the components via props
-const externalContent = {
-  id: "article-1",
-  title: "An Article",
-  author: "April Bingham",
-  text: "Some text in the article",
-};
 
 function App() {
   const [fetchedData, setFetchedData] = useState();
@@ -53,10 +42,8 @@ function App() {
                     <AllPets posts={fetchedData} />
                 </Route>
 
-                {/* contact us page */}
                 <Route path="/contactus" exact component={Contact} />
 
-                {/* thankyou page */}
                 <Route path="/thankyou" exact component={ThankYou} />
 
                 <Route
@@ -86,12 +73,13 @@ function App() {
                     exact>
                     <CategoryPage posts={fetchedData} />
                 </Route>
-
+                
                 <Route
-                    path="/baz"
-                    exact
-                    render={() => <Baz content={externalContent} />}
-                />
+                    path="/error"
+                    exact>
+                    <Error />
+                </Route>
+
                 <Route component={Error} />
             </Switch>
         </>

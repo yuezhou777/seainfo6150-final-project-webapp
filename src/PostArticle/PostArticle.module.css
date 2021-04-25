@@ -23,3 +23,22 @@
     text-align: left;
     line-height: 40px;
 }
+
+/* resposive */
+@media (min-width: 400px) {
+    .board {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 700px) {
+    .board {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 800px) {
+    .board {
+        grid-template-columns: 1fr 1fr;
+    }
+}

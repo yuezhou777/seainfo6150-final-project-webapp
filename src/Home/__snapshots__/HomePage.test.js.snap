@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders HomePage Correctly 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div>
+      <div
+        class="navContainer"
+      >
+        <header
+          class="navContainer"
+        >
+          <nav>
+            <a
+              class="navIcon"
+              href="/"
+            >
+              PurrPet
+            </a>
+          </nav>
+          <nav>
+            <ul
+              class="navList"
+            >
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/aboutus"
+                >
+                  About Us
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/allpets"
+                >
+                  All Pets
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/category"
+                >
+                  Categories
+                </a>
+              </li>
+              <li
+                class="navItem"
+              >
+                <a
+                  class="link"
+                  href="/contactus"
+                >
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+    </div>
+    <div
+      class="board"
+    >
+      <div
+        class="homeText"
+      >
+        <h2
+          class="homeTitle"
+        >
+          Now Might Be the Best Time to Adopt a Pet
+        </h2>
+        <div
+          class="homeContent"
+        >
+          <p>
+            Animal shelters and rescue groups are brimming with happy, healthy pets just waiting for someone to take them home. When you adopt, you save a loving animal by making them part of your family and get a new best friend out of the deal!
+          </p>
+        </div>
+        <h2
+          class="homeTitle"
+        >
+          Check below for avaliable pets! 
+        </h2>
+        <div
+          class="btnContainer"
+        >
+          <div
+            class="dropdown"
+          >
+            <button
+              class="dropbtn"
+            >
+              + Dogs avaliable for adoption 
+            </button>
+            <div
+              class="dropdownContent"
+            >
+              <ul
+                class="postList"
+              >
+                <a
+                  href="/posts/1"
+                >
+                  Mel
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="dropdown"
+          >
+            <button
+              class="dropbtn"
+            >
+              + Cats avaliable for adoption 
+            </button>
+            <div
+              class="dropdownContent"
+            >
+              <ul
+                class="postList"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          alt="Home page image:  human and pets get along well"
+          class="homeImg"
+          src="home.jpeg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
